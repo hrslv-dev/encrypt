@@ -14,8 +14,16 @@ int main(void){
 }
 // CIFRA VIGENERE
 string generate_key(void){ 
-    srand(time(NULL)); 
-    // for com numero aleatorio gerado entre 5 a 10  
+    // RANDOM NUMBER FOR FOR LOOP 
+    srand(time(NULL));  // max = 5 min = 2
+    // UNDERSTAND THIS FUNC HERE BETTER 
+    int random = rand() % (10 - 5 + 1) + 5;
+    int rand_char;
+    string key;  
+    for (int i = 0; i < random; i++ ){ 
+        rand_char = rand()% ( 25 - 0 + 1) + 0; 
+        key[i] = alphabet[rand_char]; 
+    }
     
 }
 string encrypt(string plaintext, int key){ 
