@@ -36,10 +36,7 @@ string encrypt(string plaintext, int key){
     // conditional if the plaintext is bigger then the key: 
     string new_key; 
     while(strlen(plaintext) > strlen(key)){ 
-        // need that variable to change the length; 
-        // Here needs "malloc" and "realloc" functions. 
-        // why? to aloc the memory to get the string bigger. 
-        key = 
+
     }
 
     string cipher; // this function will return this value. 
@@ -48,3 +45,4 @@ string encrypt(string plaintext, int key){
         
     }            
 }
+
