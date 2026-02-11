@@ -33,11 +33,13 @@ string generate_key(void){
 // plaintext is an input . 
 string encrypt(string plaintext, int key){ 
 
-    // conditional if the plaintext is bigger then the key: 
-    string new_key; 
-    while(strlen(plaintext) > strlen(key)){ 
+    // This repeats the string (key) until reach the size of the plaintext. 
+    string new_key = malloc(strlen(plaintext + 1)); 
+    // malloc - > 
+    int key_len = strlen(key); 
+    int plaintext_len = strlen(plaintext);
 
-    }
+
 
     string cipher; // this function will return this value. 
     for(int i = 0, n = strlen(plaintext); i < n; i++){ 
